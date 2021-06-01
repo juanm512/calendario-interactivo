@@ -228,6 +228,22 @@ body { font-family: sans-serif; }
 .card.is-flipped {
   transform: rotateY(180deg);
 }
+.is-opened {
+	transform: scale(1);
+  }
+  .tilt-in-top-1 {
+	animation: tilt-in-top-1 0.6s ease-in;
+}
+@keyframes tilt-in-top-1 {
+	0% {
+	  transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+	  opacity: 0;
+	}
+	100% {
+	  transform: rotateY(0deg) translateY(-330px) translateX(-850px) skewY(0deg);
+	  opacity: 1;
+	}
+  }
 
 .card__face1 {
   position: absolute;
@@ -297,7 +313,7 @@ body { font-family: sans-serif; }
 .w3-sepia{filter:sepia(75%)}.w3-sepia-max,.w3-hover-sepia:hover{filter:sepia(100%)}.w3-sepia-min{filter:sepia(50%)}
 
 
-/* TAMAÑO DEL TEXTO */
+/* TAMAï¿½O DEL TEXTO */
 .w3-tiny{font-size:10px!important}
 .w3-small{font-size:12px!important}
 .w3-medium{font-size:15px!important}
