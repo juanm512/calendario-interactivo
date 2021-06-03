@@ -111,12 +111,12 @@ function addDayTurn(idButtonDays){
 		//creo la ventana en el LI del dia correspondiente
 		document.getElementById(`li-dias-${day}-${monthIndex+1}-${year}`).innerHTML = document.getElementById(`li-dias-${day}-${monthIndex+1}-${year}`).innerHTML + `
 			<div id="daysAddTurn-${day}-${monthIndex+1}-${year}" class="w3-hide w3-display-middle w3-border w3-border-black w3-row" style="position: fixed;overflow-x: hidden;z-index:1000;width:100%;height:100%;background-color: #0000007d;">
-				<ul id="daysAddTurn-${day}-${monthIndex+1}-${year}-Ul" class="w3-ul w3-col s12 m12 l12 w3-row w3-white w3-round-medium w3-margin-top128" style="float: none;display: block;margin: auto;;overflow-y:scroll;width:60%;height:60%;">
+				<ul id="daysAddTurn-${day}-${monthIndex+1}-${year}-Ul" class="w3-ul w3-col s12 m8 l8 w3-row w3-white w3-round-medium w3-margin-top128" style="float: none;display: block;margin: auto;;overflow-y:scroll;">
 					<li id="daysAddTurn-${day}-${monthIndex+1}-${year}-Title" class="w3-col s12 m12 l12 w3-medium w3-center w3-xlarge w3-wide">${day} de ${mesesDelAnio[monthIndex]} del ${year}</li>
 					<li class="w3-col s12 m12 l12 w3-medium w3-align-left"><input id="daysAddTurn-${day}-${monthIndex+1}-${year}-Input" class="w3-col s12 m12 l12 w3-bottombar w3-input w3-border-black" type="text" placeholder="Enter your day turn descirption"></li>
 					<li id="daysAddTurn-${day}-${monthIndex+1}-${year}-AddButton" class="w3-col s12 m12 l12 w3-medium w3-align-left w3-row"><button class="w3-col s12 m4 l2 w3-button w3-dark-gray w3-round-medium">Agregar</button></li>
 				</ul>
-				<button id="daysAddTurn-${day}-${monthIndex+1}-${year}-Close" onclick="addDayTurnClose('card-dias-${day}-${monthIndex+1}-${year}')" class="w3-button w3-col s12 m6 l4 w3-round-medium w3-small w3-center w3-bottombar w3-border-white w3-black w3-margin-top" style='float: none;display: block;margin: auto;'>Guardar y cerrar</button>
+				<button id="daysAddTurn-${day}-${monthIndex+1}-${year}-Close" onclick="addDayTurnClose('card-dias-${day}-${monthIndex+1}-${year}')" class="w3-button w3-col s12 m8 l6 w3-round-medium w3-small w3-center w3-bottombar w3-border-white w3-black w3-margin-top" style='float: none;display: block;margin: auto;'>Guardar y cerrar</button>
 			</div>
 			`
 	}
